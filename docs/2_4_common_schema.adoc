@@ -1528,7 +1528,7 @@ If <<initial>> is not present in a type that can have that attribute, its value 
 ^|[.underline]#exact#
 ^|--
 
-^|<<fixed>>
+^|<<fixed>>/<<tunable>>
 ^|[.underline]#exact#
 ^|[.underline]#exact#
 ^|[.underline]#calculated# +
@@ -1539,18 +1539,7 @@ approx
 approx
 ^|--
 
-^|<<tunable>>
-^|[.underline]#exact#
-^|[.underline]#exact#
-^|[.underline]#calculated# +
-approx
-^|--
-^|--
-^|[.underline]#calculated# +
-approx
-^|--
-
-^|<<discrete>>
+^|<<discrete>>/<<continuous>>
 ^|--
 ^|--
 ^|--
@@ -1563,18 +1552,6 @@ exact +
 approx
 ^|--
 
-^|<<continuous>>
-^|--
-^|--
-^|--
-^|[.underline]#exact#
-^|[.underline]#calculated# +
-exact +
-approx
-^|[.underline]#calculated# +
-exact +
-approx
-^|--
 |====
 
 ====== Variable Naming Conventions [[namingSection]]
