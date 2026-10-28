@@ -1504,17 +1504,16 @@ If `false`, the <<state>> will not be reinitialized.
 
 .Allowed and default (shown as [.underline]#underlined#) values of <<initial>>
 [#table-definition-initial]
-[cols="1,1,1,1,1,1,1"]
+[cols="1,1,1,1,1,1"]
 |====
 .2+^h|<<variability>>
-6+^h|<<causality>>
+5+^h|<<causality>>
 
 ^|<<structuralParameter,`(structural)`>> <<parameter>>
 ^|<<calculatedParameter,`calculated parameter`>>
 ^|<<input>>
 ^|<<output>>
 ^|<<local>>
-^|<<independent>>
 
 ^|<<constant>>
 ^|--
@@ -1522,7 +1521,6 @@ If `false`, the <<state>> will not be reinitialized.
 ^|--
 ^|[.underline]#exact#
 ^|[.underline]#exact#
-^|--
 
 ^|<<fixed>>/<<tunable>>
 ^|[.underline]#exact#
@@ -1532,7 +1530,6 @@ approx
 ^|--
 ^|[.underline]#calculated# +
 approx
-^|--
 
 ^|<<discrete>>/<<continuous>>
 ^|--
@@ -1544,9 +1541,12 @@ approx
 ^|[.underline]#calculated# +
 exact +
 approx
-^|--
 
 |====
+
+NOTE: The `independent` causality is not included in this table because the
+`initial` attribute is not allowed for variables with
+`causality = independent`.
 
 ====== Variable Naming Conventions [[namingSection]]
 
