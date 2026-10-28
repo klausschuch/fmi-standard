@@ -1504,14 +1504,13 @@ If `false`, the <<state>> will not be reinitialized.
 
 .Allowed and default (shown as [.underline]#underlined#) values of <<initial>>
 [#table-definition-initial]
-[cols="1,1,1,1,1,1,1,1"]
+[cols="1,1,1,1,1,1,1"]
 |====
 .2+^h|<<variability>>
-7+^h|<<causality>>
+6+^h|<<causality>>
 
-^|<<structuralParameter,`structural Parameter`>>
-^|<<parameter>>
-^|<<calculatedParameter,`calculated Parameter`>>
+^|<<structuralParameter,`(structural)`>> <<parameter>>
+^|<<calculatedParameter,`calculated parameter`>>
 ^|<<input>>
 ^|<<output>>
 ^|<<local>>
@@ -1521,13 +1520,11 @@ If `false`, the <<state>> will not be reinitialized.
 ^|--
 ^|--
 ^|--
-^|--
 ^|[.underline]#exact#
 ^|[.underline]#exact#
 ^|--
 
 ^|<<fixed>>/<<tunable>>
-^|[.underline]#exact#
 ^|[.underline]#exact#
 ^|[.underline]#calculated# +
 approx
@@ -1538,7 +1535,6 @@ approx
 ^|--
 
 ^|<<discrete>>/<<continuous>>
-^|--
 ^|--
 ^|--
 ^|[.underline]#exact#
